@@ -1,4 +1,14 @@
-export const SectionContainer = ({ className, id, children }) => {
+interface SectionContainerProps {
+  id?: string;
+  className?: string;
+  children: React.ReactNode;
+}
+
+export const SectionContainer = ({
+  className,
+  id,
+  children,
+}: SectionContainerProps) => {
   return (
     <section
       id={id}

@@ -1,11 +1,20 @@
 import { useState, useEffect } from 'react';
-// import SunIcon from './icons/Sun'; // Asegúrate de que estos íconos sean componentes de React
-// import MoonIcon from './icons/Moon';
-// import SystemIcon from './icons/System';
+import { SunIcon } from '../assets/icons/SunIcon';
+import { SystemIcon } from '../assets/icons/SystemIcon';
+import { MoonIcon } from '../assets/icons/Moon';
 
 const THEMES = ['Light', 'Dark', 'System'];
 
-const ThemeToggle = () => {
+const getThemePreference = () => {
+  if (typeof localStorage !== 'undefined') {
+    return localStorage.getItem('theme') ?? 'system';
+  }
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light';
+};
+
+export const ThemeToggle = () => {
   const [theme, setTheme] = useState(getThemePreference());
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,28 +35,19 @@ const ThemeToggle = () => {
     };
   }, [theme]);
 
-  const getThemePreference = () => {
-    if (typeof localStorage !== 'undefined') {
-      return localStorage.getItem('theme') ?? 'system';
-    }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
-  };
-
-  const updateIcon = (themePreference) => {
+  const updateIcon = (themePreference: string) => {
     document.querySelectorAll('.theme-toggle-icon').forEach((element) => {
       (element as HTMLElement).style.transform =
         element.id === themePreference ? 'scale(1)' : 'scale(0)';
     });
   };
 
-  const handleThemeChange = (newTheme) => {
+  const handleThemeChange = (newTheme: string) => {
     localStorage.setItem('theme', newTheme.toLowerCase().trim());
     setTheme(newTheme.toLowerCase());
   };
 
-  const toggleMenu = (e) => {
+  const toggleMenu = (e: { stopPropagation: () => void }) => {
     e.stopPropagation();
     setIsMenuOpen(!isMenuOpen);
   };
@@ -62,21 +62,21 @@ const ThemeToggle = () => {
     <div className="relative ml-1 mr-1">
       <button
         id="theme-toggle-btn"
-        className="appearance-none border-none flex hover:scale-125 transition"
+        className="appearance-none border-none flex hover:scale-125 transition bg-transparent"
         onClick={toggleMenu}
       >
         <span className="sr-only">Elige el tema</span>
         <SunIcon
           id="light"
-          className="theme-toggle-icon size-5 transition-all"
+          className="theme-toggle-icon size-5 transition-all "
         />
         <MoonIcon
           id="dark"
-          className="theme-toggle-icon absolute size-5 transition-all"
+          className="theme-toggle-icon absolute size-5 transition-all "
         />
         <SystemIcon
           id="system"
-          className="theme-toggle-icon absolute size-5 transition-all"
+          className="theme-toggle-icon absolute size-5 transition-all "
         />
       </button>
 
@@ -101,5 +101,3 @@ const ThemeToggle = () => {
     </div>
   );
 };
-
-export default ThemeToggle;

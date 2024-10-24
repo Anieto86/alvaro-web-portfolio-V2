@@ -1,26 +1,26 @@
 import { useEffect } from 'react';
-//import ThemeToggle from './ThemeToggle'; // Asegúrate de que la ruta sea correcta
+import { ThemeToggle } from './ThemeToggle';
 
 const navItems = [
   {
-    title: 'Experiencia',
-    label: 'experiencia',
-    url: '/#experiencia',
+    title: 'Experience',
+    label: 'experience',
+    url: '/#experience',
   },
   {
-    title: 'Proyectos',
-    label: 'proyectos',
-    url: '/#proyectos',
+    title: 'Projects',
+    label: 'projects',
+    url: '/#projects',
   },
   {
-    title: 'Sobre mí',
-    label: 'sobre-mi',
-    url: '/#sobre-mi',
+    title: 'About Me',
+    label: 'about-me',
+    url: '/#about-me',
   },
   {
     title: 'Contacto',
     label: 'contacto',
-    url: 'mailto:miduga@gmail.com',
+    url: 'mailto:alvaro.f.nieto@gmail.com',
   },
 ];
 
@@ -78,7 +78,7 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-      <nav className="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
+      <nav className="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center dark:bg-gray-800/90 bg-white/50 animate-nav-shadow">
         {navItems.map((link) => (
           <a
             key={link.label}
@@ -89,7 +89,7 @@ export const Header = () => {
             {link.title}
           </a>
         ))}
-        {/* <ThemeToggle /> */}
+        <ThemeToggle />
       </nav>
     </header>
   );
