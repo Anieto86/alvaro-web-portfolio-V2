@@ -40,7 +40,7 @@ function App() {
           <SectionContainer id="about-me" className={undefined}>
             <TitleSection>
               <ProfileCheck className="size-8" />
-              Sobre mí
+              About Me
             </TitleSection>
             <AboutMe />
           </SectionContainer>
