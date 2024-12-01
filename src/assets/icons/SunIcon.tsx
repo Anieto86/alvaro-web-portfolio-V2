@@ -1,4 +1,6 @@
-export const SunIcon = (props) => {
+import { SVGProps } from 'react';
+
+export const SunIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

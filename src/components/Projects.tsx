@@ -1,5 +1,5 @@
 import { GithubIcon } from '../assets/icons/GitHubIcon';
-import { LinkedInIcon } from '../assets/icons/LinkedInIcon';
+// import { LinkedInIcon } from '../assets/icons/LinkedInIcon';
 import { LinkIcon } from '../assets/icons/LinkIcon';
 import { TailwindIcon } from '../assets/icons/TailwindIcon';
 import { LinkButton } from './LinkButton';

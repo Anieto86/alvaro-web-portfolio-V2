@@ -29,7 +29,11 @@ export const Hero = () => {
           Hey, I'm Alvaro Nieto
         </h1>
       </div>
-      <p className="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300">
+      <p
+        className="mt-6 text-xl
+       text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-purple-500 [&>strong]:font-semibold
+         dark:text-gray-300"
+      >
         +5 years of experience.
         <strong>Front End Engineer and ex science researcher </strong> from
         Argentina. Especializado en el desarrollo de aplicaciones web únicas.
