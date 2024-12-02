@@ -87,3 +87,9 @@ body {
     animation-play-state: paused;
   }
 }
+
+@font-face {
+  font-family: "OneStyle";
+  font-display: swap;
+  src: url("/fonts/OneStyle.woff2") format("woff2");
+}

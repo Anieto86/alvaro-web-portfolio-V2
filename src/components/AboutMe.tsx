@@ -12,20 +12,20 @@ export const AboutMe = () => {
         </p>
 
         <p>
-          I've led projects at <strong>Data Zoo</strong>, where I optimized
+          I've led projects at <strong> Data Zoo</strong>, where I optimized
           product performance and contributed to the development of design
           systems, reducing development times by 25%.
         </p>
 
         <p>
           My key achievements include enhancing user experiences through
-          <strong>SEO strategies</strong>, developing reusable components, and
+          <strong> SEO strategies</strong>, developing reusable components, and
           integrating unit testing to improve system stability and reliability.
         </p>
 
         <p>
           I’m passionate about learning and helping teams build
-          <strong>scalable, high-impact applications</strong>. My goal is to
+          <strong> scalable, high-impact applications</strong>. My goal is to
           continue designing interfaces that seamlessly connect people and
           technology.
         </p>
@@ -38,6 +38,7 @@ export const AboutMe = () => {
         alt={personalImageAlt}
         className="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64"
         style={{ objectPosition: "50% 50%" }}
+        loading="lazy"
       />
     </article>
   );

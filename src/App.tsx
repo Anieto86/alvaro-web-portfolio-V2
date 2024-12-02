@@ -13,15 +13,12 @@ import { InfiniteCarrousel } from "./components/InfiniteCarrouse;";
 
 function App() {
   return (
-    <Layout
-      title="Alvaro Portfolio - Developer and Web programer with  +5 years of experience"
-      description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
-    >
+    <Layout>
       <main className="px-4">
-        <SectionContainer className={undefined} id={undefined}>
-          <Hero />
-        </SectionContainer>
         <div className="space-y-24 mt-20">
+          <SectionContainer className={undefined} id="hero">
+            <Hero />
+          </SectionContainer>
           <SectionContainer id="experience" className={undefined}>
             <TitleSection>
               <Briefcase className="size-8" />

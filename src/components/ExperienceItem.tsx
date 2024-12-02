@@ -1,5 +1,4 @@
 import LinkInline from "./LinkInline";
-
 interface ExperienceItemProps {
   date: string;
   title: string;
@@ -22,7 +21,6 @@ export const ExperienceItem = ({
           <span className="text-purple-400  dark:text-yellow-400 -left-[42px] absolute rounded-full text-5xl">
             &bull;
           </span>
-
           <h3 className="text-xl font-bold text-purple-400 dark:text-yellow-400">
             {title}
           </h3>

@@ -6,12 +6,12 @@ export const Footer = () => {
       <div className="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4">
         <span className="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90">
           © {currentYear}{" "}
-          <a href="https://midu.dev/" className="hover:underline">
-            Alvaro Nieto / GitHub: Anieto86
+          <a href="" className="hover:underline">
+            Alvaro Nieto
           </a>
-          . Casi todos los derechos reservados
+          .All rights reserved
         </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
+        <ul className="flex flex-row justify-center items-center sm:mt-5 text-sm font-medium dark:text-white/90">
           <li>
             <a href="/#about-me" className="hover:underline me-4 md:me-6">
               About me

@@ -1,40 +1,14 @@
-import { GithubIcon } from '../assets/icons/GitHubIcon';
-// import { LinkedInIcon } from '../assets/icons/LinkedInIcon';
-import { LinkIcon } from '../assets/icons/LinkIcon';
-import { TailwindIcon } from '../assets/icons/TailwindIcon';
-import { LinkButton } from './LinkButton';
-
-const TAGS = {
-  TAILWIND: {
-    name: 'Tailwind CSS',
-    class: 'bg-[#003159] text-white',
-    icon: TailwindIcon,
-  },
-  NEXT: {
-    name: 'Next.js',
-    class: 'bg-[#000000] text-white',
-    icon: () => <span>Next.js Icon</span>,
-  },
-};
-
-const PROJECTS = [
-  {
-    title: 'AdventJS - Retos de programación con JavaScript y TypeScript',
-    description:
-      'Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.',
-    link: 'https://adventjs.dev',
-    image: '/projects/adventjs.webp',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-    github: 'test',
-  },
-];
+import { GithubIcon } from "../assets/icons/GitHubIcon";
+import { LinkIcon } from "../assets/icons/LinkIcon";
+import { projects } from "../utils/constants";
+import { LinkButton } from "./LinkButton";
 
 export const Projects = () => {
   return (
     <div className="flex flex-col gap-y-16">
-      {PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      {projects.map(({ image, title, description, tags, link, github }, i) => (
         <article
-          key={title}
+          key={`${title}-${i}`}
           className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
         >
           <div className="w-full md:w-1/2">
