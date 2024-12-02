@@ -1,33 +1,34 @@
-import { useEffect } from 'react';
-import { ThemeToggle } from './ThemeToggle';
+import { useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   {
-    title: 'Experience',
-    label: 'experience',
-    url: '/#experience',
+    title: "Experience",
+    label: "experience",
+    url: "/#experience",
   },
   {
-    title: 'Projects',
-    label: 'projects',
-    url: '/#projects',
+    title: "Projects",
+    label: "projects",
+    url: "/#projects",
   },
   {
-    title: 'About Me',
-    label: 'about-me',
-    url: '/#about-me',
+    title: "About Me",
+    label: "about-me",
+    url: "/#about-me",
   },
+
   {
-    title: 'Contacto',
-    label: 'contacto',
-    url: 'mailto:alvaro.f.nieto@gmail.com',
+    title: "Contact",
+    label: "contact",
+    url: "mailto:alvaro.f.nieto@gmail.com",
   },
 ];
 
 export const Header = () => {
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const navItemsElements = document.querySelectorAll('header nav a');
+    const sections = document.querySelectorAll("section");
+    const navItemsElements = document.querySelectorAll("header nav a");
 
     const callback = (
       entries: { isIntersecting: unknown; target: { id: string | null } }[]
@@ -36,10 +37,10 @@ export const Header = () => {
         (entry: { isIntersecting: unknown; target: { id: string | null } }) => {
           if (entry.isIntersecting) {
             navItemsElements.forEach((item) => {
-              if (item.getAttribute('aria-label') === entry.target.id) {
-                item.classList.add('text-blue-500');
+              if (item.getAttribute("aria-label") === entry.target.id) {
+                item.classList.add("text-blue-500");
               } else {
-                item.classList.remove('text-blue-500');
+                item.classList.remove("text-blue-500");
               }
             });
           }
@@ -49,7 +50,7 @@ export const Header = () => {
 
     const observer = new IntersectionObserver(callback, {
       root: null,
-      rootMargin: '0px',
+      rootMargin: "0px",
       threshold: 0.3,
     });
 
@@ -59,7 +60,7 @@ export const Header = () => {
 
     // Cleanup function
     const handleVisibilityChange = () => {
-      if (document.visibilityState === 'hidden') {
+      if (document.visibilityState === "hidden") {
         observer.disconnect();
       } else {
         sections.forEach((section) => {
@@ -68,11 +69,11 @@ export const Header = () => {
       }
     };
 
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     return () => {
       observer.disconnect();
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 

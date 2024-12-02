@@ -1,11 +1,11 @@
-import { GithubIcon } from '../assets/icons/GitHubIcon';
-import { LinkedInIcon } from '../assets/icons/LinkedInIcon';
-import { MailIcon } from '../assets/icons/MailIcon';
-import { Badge } from './Badge';
-import { SocialPill } from './SocialPill';
+import { GithubIcon } from "../assets/icons/GitHubIcon";
+import { LinkedInIcon } from "../assets/icons/LinkedInIcon";
+import { MailIcon } from "../assets/icons/MailIcon";
+import { Badge } from "./Badge";
+import { SocialPill } from "./SocialPill";
 
 export const Hero = () => {
-  const personalImageAlt = 'Alvaro Fernando Nieto Guil';
+  const personalImageAlt = "Alvaro Fernando Nieto Guil";
 
   return (
     <div className="max-w-xl mt-20">
@@ -36,7 +36,11 @@ export const Hero = () => {
       >
         +5 years of experience.
         <strong>Front End Engineer and ex science researcher </strong> from
-        Argentina. Especializado en el desarrollo de aplicaciones web únicas.
+        Argentina. Specialized in creating scalable and high-performance web
+        applications using modern technologies like{" "}
+        <strong>React.js, TypeScript, and JavaScript.</strong> Proven track
+        record in delivering innovative solutions and improving development
+        processes in dynamic environments.
       </p>
       <nav className="flex flex-wrap gap-4 mt-8">
         <SocialPill href="mailto:alvaro.f.nieto@gmail.com">

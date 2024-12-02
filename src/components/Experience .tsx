@@ -1,20 +1,36 @@
-import { ExperienceItem } from './ExperienceItem';
+import { ExperienceItem } from "./ExperienceItem";
 
 const EXPERIENCE = [
   {
-    date: 'Actualmente...',
-    title: 'Creador de Contenido',
-    company: 'Twitch',
-    description:
-      'Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.',
-    link: 'https://twitch.tv/midudev',
+    date: "November 2024 - Present",
+    title: "Freelance Web Developer",
+    company: "Hubble X Web Page",
+    description: "Coming soon.",
+    link: "",
   },
   {
-    date: 'Septiembre 2022',
-    title: 'Principal Frontend Engineer',
-    company: 'Adevinta Spain',
+    date: "October 2022 - November 2024",
+    title: "Frontend Software Engineer",
+    company: "Data Zoo",
     description:
-      'Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.',
+      "Led the development of key features for SPA applications using React and TypeScript, improving scalability and maintainability of the platform. Reduced bundle sizes by 5% to 20%, enhancing performance across four products. Collaborated with back-end teams to integrate REST APIs, ensuring efficient data flow. Introduced unit testing frameworks and performance profiling techniques, achieving a 30% improvement in loading times. Additionally, implemented a robust design system in partnership with UI/UX teams, reducing feature development time by 25%.",
+    link: "https://www.datazoo.com/",
+  },
+  {
+    date: "April 2021 - September 2022",
+    title: "Frontend Software Engineer",
+    company: "The Everyone Project",
+    description:
+      "Completely developed the front-end of a next-generation SPA product, transforming UX designs into production-ready code using ReactJS and TypeScript. Improved development speed by 20% through optimized component reuse. Employed agile methodologies to ensure continuous delivery and integration within cross-functional teams. Performed extensive performance optimizations and bug fixes, enhancing user experience and application stability.",
+    link: "https://theeveryoneproject.org/",
+  },
+  {
+    date: "October 2020 - December 2020",
+    title: "Freelance Web Developer",
+    company: "ChemDye Web Page",
+    description:
+      "Redesigned and updated the version 2 of the website, improving user experience and functionality. Increased site visits by 25% through SEO optimization and content restructuring. Implemented a communication system with Mailchimp, boosting email capture by 30% and improving the support team's efficiency. Additionally, developed a customized contact system that enhanced customer inquiries and lead generation by 30%.",
+    link: "https://chemdyeillustrations.com/",
   },
 ];
 

@@ -1,14 +1,15 @@
-import './App.css';
-import { SectionContainer } from './components/SectionContainer';
-import { Layout } from './layouts/Layout';
-import { Hero } from './components/Hero';
-import TitleSection from './components/TitleSection';
-import Experience from './components/Experience ';
-import { Briefcase } from './assets/icons/Briefcase';
-import { CodeIcon } from './assets/icons/CodeIcon';
-import { Projects } from './components/Projects';
-import { AboutMe } from './components/AboutMe';
-import { ProfileCheck } from './assets/icons/ProfileCheck';
+import "./App.css";
+import { SectionContainer } from "./components/SectionContainer";
+import { Layout } from "./layouts/Layout";
+import { Hero } from "./components/Hero";
+import TitleSection from "./components/TitleSection";
+import Experience from "./components/Experience ";
+import { Briefcase } from "./assets/icons/Briefcase";
+import { CodeIcon } from "./assets/icons/CodeIcon";
+import { Projects } from "./components/Projects";
+import { AboutMe } from "./components/AboutMe";
+import { ProfileCheck } from "./assets/icons/ProfileCheck";
+import { InfiniteCarrousel } from "./components/InfiniteCarrouse;";
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
               Projects
             </TitleSection>
             <Projects />
+          </SectionContainer>
+
+          <SectionContainer id="stack" className={undefined}>
+            <InfiniteCarrousel />
           </SectionContainer>
 
           <SectionContainer id="about-me" className={undefined}>

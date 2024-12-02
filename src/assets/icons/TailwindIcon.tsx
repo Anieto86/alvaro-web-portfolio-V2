@@ -1,7 +1,8 @@
-import { SVGProps } from 'react';
+import { SVGProps } from "react";
 
 export const TailwindIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    className="size-20"
     viewBox="0 0 256 154"
     width="1em"
     height="1em"

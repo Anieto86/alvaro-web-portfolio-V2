@@ -1,4 +1,4 @@
-import LinkInline from './LinkInline';
+import LinkInline from "./LinkInline";
 
 interface ExperienceItemProps {
   date: string;
@@ -26,7 +26,7 @@ export const ExperienceItem = ({
           <h3 className="text-xl font-bold text-purple-400 dark:text-yellow-400">
             {title}
           </h3>
-          <h4 className="font-semibold text-xl text-gray-600 dark:text-white">
+          <h4 className="font-semibold text-xl text-gray-600 dark:text-white te">
             {company}
           </h4>
           <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
@@ -34,11 +34,11 @@ export const ExperienceItem = ({
           </time>
         </div>
       </div>
-      <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+      <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3 text-left">
         {description}
         {link && (
           <LinkInline href={link}>
-            Saber más{' '}
+            More about
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 icon icon-tabler icon-tabler-chevron-right"
