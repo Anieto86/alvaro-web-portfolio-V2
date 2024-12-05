@@ -19,6 +19,7 @@ function App() {
           <SectionContainer className={undefined} id="hero">
             <Hero />
           </SectionContainer>
+
           <SectionContainer id="experience" className={undefined}>
             <TitleSection>
               <Briefcase className="size-8" />

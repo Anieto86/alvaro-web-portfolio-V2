@@ -4,7 +4,6 @@ export const JSicon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}
-      className="size-20"
       xmlns="http://www.w3.org/2000/svg"
       width="2500"
       height="2500"

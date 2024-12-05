@@ -7,8 +7,10 @@ import { SocialPill } from "./SocialPill";
 export const Hero = () => {
   const personalImageAlt = "Alvaro Fernando Nieto Guil";
 
+  console.log(personalImageAlt);
+
   return (
-    <div className="max-w-xl mt-20">
+    <div className="max-w-2xl mt-20">
       <div className="flex gap-4 mb-4">
         <img
           className="rounded-full shadow-lg size-16"
@@ -32,10 +34,10 @@ export const Hero = () => {
       <p
         className="mt-6 text-xl
        text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-purple-500 [&>strong]:font-semibold
-         dark:text-gray-300"
+         dark:text-gray-300 text-pretty text-left"
       >
         +5 years of experience.
-        <strong>Front End Engineer and ex science researcher </strong> from
+        <strong> Front End Engineer and ex science researcher </strong> from
         Argentina. Specialized in creating scalable and high-performance web
         applications using modern technologies like{" "}
         <strong>React.js, TypeScript, and JavaScript.</strong> Proven track

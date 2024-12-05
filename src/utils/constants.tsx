@@ -13,15 +13,15 @@ import { VitestIcon } from "../assets/icons/VitestIcon";
 
 export const logos = [
   {
-    component: <HTML5Icon />,
+    component: <HTML5Icon className="size-20" />,
     alt: "HTML5",
   },
   {
-    component: <CssIcon />,
+    component: <CssIcon className="size-20" />,
     alt: "Css",
   },
   {
-    component: <JSicon />,
+    component: <JSicon className="size-20" />,
     alt: "JavaScript",
   },
   {
@@ -29,35 +29,35 @@ export const logos = [
     alt: "React",
   },
   {
-    component: <TyIcon />,
+    component: <TyIcon className="size-20" />,
     alt: "TypeScript",
   },
   {
-    component: <NodeIcon />,
+    component: <NodeIcon className="size-20" />,
     alt: "Node JS",
   },
   {
-    component: <ReduxIcon />,
+    component: <ReduxIcon className="size-20" />,
     alt: "Redux toolkit",
   },
   {
-    component: <TailwindIcon />,
+    component: <TailwindIcon className="size-20" />,
     alt: "Tailwind CSS",
   },
   {
-    component: <MaterialUIIcon />,
+    component: <MaterialUIIcon className="size-20" />,
     alt: "Material UI",
   },
   {
-    component: <VitestIcon />,
+    component: <VitestIcon className="size-20" />,
     alt: "Vitest",
   },
   {
-    component: <PostgreSQLIcon />,
+    component: <PostgreSQLIcon className="size-20" />,
     alt: "PostgreSQL",
   },
   {
-    component: <ExpressJSIcon />,
+    component: <ExpressJSIcon className="size-20" />,
     alt: "Express JS",
   },
 ];
@@ -103,6 +103,7 @@ export const EXPERIENCE = [
   },
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
@@ -119,43 +120,49 @@ const TAGS = {
     class: "bg-[#336791] text-white",
     icon: PostgreSQLIcon,
   },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#000000]  text-white",
+    icon: JSicon,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#000000] text-white",
+    icon: TyIcon,
+  },
+  MUI: {
+    name: "Material UI",
+    class: "bg-[#000000] text-white",
+    icon: MaterialUIIcon,
+  },
 };
 
 export const projects = [
   {
-    title: "Medical Dashboard - React, TypeScript, Tailwind CSS",
+    title: "Soon - Medical Dashboard - React, TypeScript and Tailwind CSS",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+    link: "",
+    image: "",
     tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SQL],
     github: "test",
   },
   {
-    title: "Medical Dashboard - React, TypeScript, Tailwind CSS",
+    title: "DataViz Project - D3.js , React, JavaScript and Material UI",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SQL],
-    github: "test",
+      "Created a data visualization project using D3.js, React, JavaScript, and Material UI. The project consists of a Dot Plot chart that allows users to select different data sets and visualize them in a Dot Plot chart.",
+    link: "https://rainbow-gnome-2a5580.netlify.app",
+    image: "/imgs/dataVIZ.webp",
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT],
+    github: "https://github.com/Anieto86/data-visualization",
   },
   {
-    title: "Medical Dashboard - React, TypeScript, Tailwind CSS",
+    title: "Cinema Radar - React, TypeScript",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SQL],
-    github: "test",
-  },
-  {
-    title: "Medical Dashboard - React, TypeScript, Tailwind CSS",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SQL],
-    github: "test",
+    link: "https://cinema-radar.netlify.app",
+    image: "/imgs/cinema-radar.webp",
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.MUI],
+    github: "https://github.com/Anieto86/cinema-radar",
   },
 ];

@@ -1,7 +1,9 @@
-export const TyIcon = () => {
+import { SVGProps } from "react";
+
+export const TyIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      className="size-20"
+      {...props}
       viewBox="0 0 256 256"
       width="256"
       height="256"
