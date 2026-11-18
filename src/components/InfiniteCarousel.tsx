@@ -1,7 +1,7 @@
 import { logos } from "../utils/constants";
 
 const LogoRow = () => (
-  <div className="animate-slide-left motion-reduce:animate-none group-hover:animation-pause inline-block w-max">
+  <div className="animate-slide-left group-hover:animation-pause inline-block w-max">
     {logos.map((logo, index) => (
       <div key={index} className="mx-4 inline-block h-16" aria-label={logo.alt}>
         {logo.component}
