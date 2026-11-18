@@ -1,20 +1,41 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvaro Nieto – Full Stack Developer (React, FastAPI)</title>
+    <meta
+      name="description"
+      content="Full Stack Developer with a PhD in Chemistry. I build web apps for science and research teams with React, FastAPI and PostgreSQL. 5+ years of experience."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Hire Alvaro to create your web or mobile app. Web Developer and Content Creator. Specialized in creating unique applications." />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>Alvaro Portfolio - Developer and Web programer with +5 years of experience</title>
-</head>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alvaro-web-portfolio.netlify.app/" />
+    <meta property="og:title" content="Alvaro Nieto – Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Web apps for science and research teams. React, FastAPI, PostgreSQL."
+    />
+    <meta name="twitter:card" content="summary" />
 
-<body>
-  <div id="root"></div>
-  <link rel="stylesheet" href="/index.css" />
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+    <script>
+      // Apply the saved theme before first paint to avoid a light/dark flash.
+      (function () {
+        try {
+          var t = localStorage.getItem("theme") || "system";
+          var dark =
+            t === "dark" ||
+            (t === "system" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", dark);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
 
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

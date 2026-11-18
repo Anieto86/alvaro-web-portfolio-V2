@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Alvaro Nieto – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of Alvaro Nieto, Full Stack Developer.
 
-Currently, two official plugins are available:
+**Live:** https://alvaro-web-portfolio.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stack
 
-## Expanding the ESLint configuration
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS 3
+- pnpm
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- Responsive single-page layout
+- Light / dark / system theme with no flash on load
+- Experience timeline and project showcase
+- Animated tech-stack carousel (respects `prefers-reduced-motion`)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting started
+
+```bash
+pnpm install
+pnpm dev        # start the dev server
+pnpm build      # type-check and build for production
+pnpm preview    # preview the production build
+pnpm lint       # run ESLint
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Project structure
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+src/
+  assets/icons/   SVG icon components
+  components/     UI components (Hero, Projects, Experience, ...)
+  layouts/        Page layout
+  utils/          Static content (experience, projects, stack logos)
+```
+
+Content for experience, projects and stack logos lives in `src/utils/constants.tsx`.
+
+## Deployment
+
+Deployed on Netlify. Build command: `pnpm build`, publish directory: `dist`.

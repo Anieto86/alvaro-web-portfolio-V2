@@ -12,7 +12,7 @@ export default {
         },
       },
       fontFamily: {
-        oneStyle: ['"OneStyle"', "sans-serif"],
+        oneStyle: ['"Onest Variable"', "system-ui", "sans-serif"],
       },
       animation: {
         "slide-left": "slide-left 8s linear infinite",

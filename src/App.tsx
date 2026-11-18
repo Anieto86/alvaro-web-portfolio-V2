@@ -3,24 +3,24 @@ import { SectionContainer } from "./components/SectionContainer";
 import { Layout } from "./layouts/Layout";
 import { Hero } from "./components/Hero";
 import TitleSection from "./components/TitleSection";
-import Experience from "./components/Experience ";
+import Experience from "./components/Experience";
 import { Briefcase } from "./assets/icons/Briefcase";
 import { CodeIcon } from "./assets/icons/CodeIcon";
 import { Projects } from "./components/Projects";
 import { AboutMe } from "./components/AboutMe";
 import { ProfileCheck } from "./assets/icons/ProfileCheck";
-import { InfiniteCarrousel } from "./components/InfiniteCarrouse;";
+import { InfiniteCarousel } from "./components/InfiniteCarousel";
 
 function App() {
   return (
     <Layout>
       <main className="px-4">
         <div className="space-y-24 mt-20">
-          <SectionContainer className={undefined} id="hero">
+          <SectionContainer id="hero">
             <Hero />
           </SectionContainer>
 
-          <SectionContainer id="experience" className={undefined}>
+          <SectionContainer id="experience">
             <TitleSection>
               <Briefcase className="size-8" />
               Professional Expertise
@@ -28,7 +28,7 @@ function App() {
             <Experience />
           </SectionContainer>
 
-          <SectionContainer id="projects" className={undefined}>
+          <SectionContainer id="projects">
             <TitleSection>
               <CodeIcon className="size-7" />
               Projects
@@ -36,11 +36,11 @@ function App() {
             <Projects />
           </SectionContainer>
 
-          <SectionContainer id="stack" className={undefined}>
-            <InfiniteCarrousel />
+          <SectionContainer id="stack">
+            <InfiniteCarousel />
           </SectionContainer>
 
-          <SectionContainer id="about-me" className={undefined}>
+          <SectionContainer id="about-me">
             <TitleSection>
               <ProfileCheck className="size-8" />
               About Me
