@@ -1,11 +1,11 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
+import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "../utils/contact";
 
 type Status = "idle" | "sending" | "success" | "error";
 
 // Must match the `name` of the hidden form in index.html (Netlify Forms).
 const FORM_NAME = "contact";
-const FALLBACK_EMAIL = "alvaro.f.nieto@gmail.com";
 
 const fieldClass =
   "w-full px-4 py-2 text-gray-800 bg-white border border-gray-300 rounded-lg dark:bg-gray-900 dark:border-gray-600 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-yellow-400";
@@ -112,8 +112,13 @@ export const ContactForm = () => {
           {status === "error" && (
             <span className="text-red-600 dark:text-red-400">
               Something went wrong. You can also email me at{" "}
-              <a className="underline" href={`mailto:${FALLBACK_EMAIL}`}>
-                {FALLBACK_EMAIL}
+              <a
+                className="underline"
+                href={GMAIL_COMPOSE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {CONTACT_EMAIL}
               </a>
               .
             </span>
