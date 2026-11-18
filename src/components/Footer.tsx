@@ -6,10 +6,10 @@ export const Footer = () => {
       <div className="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4">
         <span className="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90">
           © {currentYear}{" "}
-          <a href="" className="hover:underline">
+          <a href="/#hero" className="hover:underline">
             Alvaro Nieto
           </a>
-          .All rights reserved
+          . All rights reserved.
         </span>
         <ul className="flex flex-row justify-center items-center sm:mt-5 text-sm font-medium dark:text-white/90">
           <li>
@@ -19,7 +19,7 @@ export const Footer = () => {
           </li>
           <li>
             <a
-              id="contacto"
+              id="contact"
               href="mailto:alvaro.f.nieto@gmail.com"
               className="hover:underline"
             >

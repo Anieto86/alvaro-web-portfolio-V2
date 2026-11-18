@@ -7,8 +7,6 @@ import { SocialPill } from "./SocialPill";
 export const Hero = () => {
   const personalImageAlt = "Alvaro Fernando Nieto Guil";
 
-  console.log(personalImageAlt);
-
   return (
     <div className="max-w-2xl mt-20">
       <div className="flex gap-4 mb-4">

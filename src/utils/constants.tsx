@@ -139,15 +139,6 @@ const TAGS = {
 
 export const projects = [
   {
-    title: "Soon - Medical Dashboard - React, TypeScript and Tailwind CSS",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "",
-    image: "",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SQL],
-    github: "test",
-  },
-  {
     title: "DataViz Project - D3.js , React, JavaScript and Material UI",
     description:
       "Created a data visualization project using D3.js, React, JavaScript, and Material UI. The project consists of a Dot Plot chart that allows users to select different data sets and visualize them in a Dot Plot chart.",
@@ -157,9 +148,9 @@ export const projects = [
     github: "https://github.com/Anieto86/data-visualization",
   },
   {
-    title: "Cinema Radar - React, TypeScript",
+    title: "Cinema Radar - React, TypeScript and Material UI",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
+      "Movie discovery app built with React, TypeScript and Material UI.",
     link: "https://cinema-radar.netlify.app",
     image: "/imgs/cinema-radar.webp",
     tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.MUI],

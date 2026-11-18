@@ -6,7 +6,9 @@ import { LinkButton } from "./LinkButton";
 export const Projects = () => {
   return (
     <div className="flex flex-col gap-y-16">
-      {projects.map(({ image, title, description, tags, link, github }, i) => (
+      {projects
+        .filter((p) => p.image && (p.link || p.github))
+        .map(({ image, title, description, tags, link, github }, i) => (
         <article
           key={`${title}-${i}`}
           className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
@@ -16,7 +18,9 @@ export const Projects = () => {
               <img
                 alt={title}
                 className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                // loading="lazy"
+                loading="lazy"
+                width={800}
+                height={450}
                 src={image}
               />
             </div>

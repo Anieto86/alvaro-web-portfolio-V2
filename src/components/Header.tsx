@@ -37,10 +37,10 @@ export const Header = () => {
         (entry: { isIntersecting: unknown; target: { id: string | null } }) => {
           if (entry.isIntersecting) {
             navItemsElements.forEach((item) => {
-              if (item.getAttribute("aria-label") === entry.target.id) {
-                item.classList.add("text-blue-500");
+              if (item.getAttribute("data-section") === entry.target.id) {
+                item.classList.add("text-purple-500", "dark:text-yellow-400");
               } else {
-                item.classList.remove("text-blue-500");
+                item.classList.remove("text-purple-500", "dark:text-yellow-400");
               }
             });
           }
@@ -83,8 +83,8 @@ export const Header = () => {
         {navItems.map((link) => (
           <a
             key={link.label}
-            className="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500"
-            aria-label={link.label}
+            className="relative block px-2 py-2 transition hover:text-purple-500 dark:hover:text-yellow-400"
+            data-section={link.label}
             href={link.url}
           >
             {link.title}

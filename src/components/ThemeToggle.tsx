@@ -64,8 +64,10 @@ export const ThemeToggle = () => {
         id="theme-toggle-btn"
         className="appearance-none border-none flex hover:scale-125 transition bg-transparent"
         onClick={toggleMenu}
+        aria-haspopup="menu"
+        aria-expanded={isMenuOpen}
       >
-        <span className="sr-only">Elige el tema</span>
+        <span className="sr-only">Choose theme</span>
         <SunIcon
           id="light"
           className="theme-toggle-icon size-5 transition-all "
@@ -85,14 +87,17 @@ export const ThemeToggle = () => {
           id="themes-menu"
           className="absolute scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md open"
         >
-          <ul>
+          <ul role="menu">
             {THEMES.map((themeOption) => (
-              <li
-                key={themeOption}
-                className="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm"
-                onClick={() => handleThemeChange(themeOption)}
-              >
-                {themeOption}
+              <li key={themeOption} role="none">
+                <button
+                  type="button"
+                  role="menuitem"
+                  className="themes-menu-option w-full px-2 py-1.5 text-left cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm"
+                  onClick={() => handleThemeChange(themeOption)}
+                >
+                  {themeOption}
+                </button>
               </li>
             ))}
           </ul>
