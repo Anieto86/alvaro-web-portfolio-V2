@@ -10,6 +10,8 @@ import { Projects } from "./components/Projects";
 import { AboutMe } from "./components/AboutMe";
 import { ProfileCheck } from "./assets/icons/ProfileCheck";
 import { InfiniteCarousel } from "./components/InfiniteCarousel";
+import { ContactForm } from "./components/ContactForm";
+import { MailIcon } from "./assets/icons/MailIcon";
 
 function App() {
   return (
@@ -46,6 +48,14 @@ function App() {
               About Me
             </TitleSection>
             <AboutMe />
+          </SectionContainer>
+
+          <SectionContainer id="contact">
+            <TitleSection>
+              <MailIcon className="size-7" />
+              Contact
+            </TitleSection>
+            <ContactForm />
           </SectionContainer>
         </div>
       </main>

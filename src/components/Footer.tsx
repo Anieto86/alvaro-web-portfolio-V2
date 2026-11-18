@@ -18,11 +18,7 @@ export const Footer = () => {
             </a>
           </li>
           <li>
-            <a
-              id="contact"
-              href="mailto:alvaro.f.nieto@gmail.com"
-              className="hover:underline"
-            >
+            <a href="/#contact" className="hover:underline">
               Contact
             </a>
           </li>

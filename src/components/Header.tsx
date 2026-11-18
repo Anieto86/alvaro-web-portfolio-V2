@@ -21,7 +21,7 @@ const navItems = [
   {
     title: "Contact",
     label: "contact",
-    url: "mailto:alvaro.f.nieto@gmail.com",
+    url: "/#contact",
   },
 ];
 
