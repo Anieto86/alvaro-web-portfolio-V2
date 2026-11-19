@@ -1,6 +1,6 @@
 import LinkInline from "./LinkInline";
-interface ExperienceItemProps {
-  date: string;
+export interface ExperienceItemProps {
+  date?: string;
   title: string;
   company: string;
   description: string;
@@ -27,9 +27,11 @@ export const ExperienceItem = ({
           <h4 className="font-semibold text-xl text-gray-600 dark:text-white te">
             {company}
           </h4>
-          <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
-            {date}
-          </time>
+          {date && (
+            <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
+              {date}
+            </time>
+          )}
         </div>
       </div>
       <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3 text-left">

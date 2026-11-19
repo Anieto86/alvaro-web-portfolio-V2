@@ -12,6 +12,8 @@ import { ProfileCheck } from "./assets/icons/ProfileCheck";
 import { InfiniteCarousel } from "./components/InfiniteCarousel";
 import { ContactForm } from "./components/ContactForm";
 import { MailIcon } from "./assets/icons/MailIcon";
+import { FlaskIcon } from "./assets/icons/FlaskIcon";
+import { SCIENCE_TIMELINE } from "./utils/constants";
 
 function App() {
   return (
@@ -28,6 +30,14 @@ function App() {
               Professional Expertise
             </TitleSection>
             <Experience />
+          </SectionContainer>
+
+          <SectionContainer id="science">
+            <TitleSection>
+              <FlaskIcon className="size-8" />
+              Scientific Journey
+            </TitleSection>
+            <Experience items={SCIENCE_TIMELINE} />
           </SectionContainer>
 
           <SectionContainer id="projects">
