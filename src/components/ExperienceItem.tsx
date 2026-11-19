@@ -4,6 +4,8 @@ export interface ExperienceItemProps {
   title: string;
   company: string;
   description: string;
+  // Optional bullet points rendered under the description.
+  highlights?: string[];
   link?: string;
 }
 
@@ -12,6 +14,7 @@ export const ExperienceItem = ({
   title,
   company,
   description,
+  highlights,
   link,
 }: ExperienceItemProps) => {
   return (
@@ -36,6 +39,13 @@ export const ExperienceItem = ({
       </div>
       <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3 text-left">
         {description}
+        {highlights && highlights.length > 0 && (
+          <ul className="pl-5 space-y-1 list-disc marker:text-purple-400 dark:marker:text-yellow-400">
+            {highlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        )}
         {link && (
           <LinkInline href={link}>
             More about
