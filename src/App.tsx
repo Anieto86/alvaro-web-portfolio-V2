@@ -13,7 +13,9 @@ import { InfiniteCarousel } from "./components/InfiniteCarousel";
 import { ContactForm } from "./components/ContactForm";
 import { MailIcon } from "./assets/icons/MailIcon";
 import { FlaskIcon } from "./assets/icons/FlaskIcon";
-import { SCIENCE_TIMELINE } from "./utils/constants";
+import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
+import { SocialPill } from "./components/SocialPill";
+import { LinkIcon } from "./assets/icons/LinkIcon";
 
 function App() {
   return (
@@ -38,6 +40,17 @@ function App() {
               Scientific Journey
             </TitleSection>
             <Experience items={SCIENCE_TIMELINE} />
+            <nav
+              aria-label="Research profiles"
+              className="flex flex-wrap gap-4 mx-12 mt-4"
+            >
+              {RESEARCH_PROFILES.map(({ name, href }) => (
+                <SocialPill key={name} href={href}>
+                  <LinkIcon className="size-4" />
+                  {name}
+                </SocialPill>
+              ))}
+            </nav>
           </SectionContainer>
 
           <SectionContainer id="projects">

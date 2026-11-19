@@ -103,6 +103,17 @@ export const EXPERIENCE = [
   },
 ];
 
+export const RESEARCH_PROFILES = [
+  {
+    name: "Google Scholar",
+    href: "https://scholar.google.com.ar/citations?user=eyDpuOMAAAAJ&hl=en",
+  },
+  {
+    name: "ResearchGate",
+    href: "https://www.researchgate.net/profile/Alvaro-Fernando-Nieto-2",
+  },
+];
+
 // Scientific career, newest first. Dates are omitted until confirmed.
 export const SCIENCE_TIMELINE = [
   {
