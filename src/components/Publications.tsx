@@ -33,33 +33,41 @@ export const Publications = () => {
               {paper.title}
             </h3>
 
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              {paper.authors.map((author, index) => (
-                <span key={author}>
-                  {author.includes(OWNER_NAME) ? (
-                    <strong className="text-gray-800 dark:text-white">
-                      {author}
-                    </strong>
-                  ) : (
-                    author
-                  )}
-                  {index < paper.authors.length - 1 && ", "}
-                </span>
-              ))}
-            </p>
+            {paper.authors && (
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                {paper.authors.map((author, index) => (
+                  <span key={author}>
+                    {author.includes(OWNER_NAME) ? (
+                      <strong className="text-gray-800 dark:text-white">
+                        {author}
+                      </strong>
+                    ) : (
+                      author
+                    )}
+                    {index < (paper.authors?.length ?? 0) - 1 && ", "}
+                  </span>
+                ))}
+              </p>
+            )}
 
             <p className="mt-1 text-sm italic text-gray-600 dark:text-gray-400">
               {paper.journal} ({paper.year}) · {paper.citation}
             </p>
 
-            <p className="mt-3 text-gray-700 dark:text-gray-300 text-pretty">
-              {paper.summary}
-            </p>
+            {paper.summary && (
+              <p className="mt-3 text-gray-700 dark:text-gray-300 text-pretty">
+                {paper.summary}
+              </p>
+            )}
 
             <footer className="flex flex-wrap gap-3 mt-4">
               <LinkButton href={paper.doi}>Paper (DOI)</LinkButton>
-              <LinkButton href={paper.pubmed}>PubMed</LinkButton>
-              <LinkButton href={paper.pmc}>Full text (PMC)</LinkButton>
+              {paper.pubmed && (
+                <LinkButton href={paper.pubmed}>PubMed</LinkButton>
+              )}
+              {paper.pmc && (
+                <LinkButton href={paper.pmc}>Full text (PMC)</LinkButton>
+              )}
             </footer>
           </div>
         </article>

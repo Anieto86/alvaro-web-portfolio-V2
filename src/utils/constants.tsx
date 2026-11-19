@@ -148,14 +148,14 @@ export const SKILL_GROUPS = [
 
 export interface Publication {
   title: string;
-  authors: string[];
+  authors?: string[];
   journal: string;
   year: number;
   citation: string;
-  summary: string;
+  summary?: string;
   doi: string;
-  pubmed: string;
-  pmc: string;
+  pubmed?: string;
+  pmc?: string;
   // Local path under /public, e.g. "/imgs/igf1r-migration.webp". Optional.
   image?: string;
   imageAlt?: string;
@@ -184,9 +184,25 @@ export const PUBLICATIONS: Publication[] = [
     pubmed: "https://pubmed.ncbi.nlm.nih.gov/28794445/",
     pmc: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5550468/",
   },
+  {
+    title:
+      "The Motor KIF5C Links the Requirements of Stable Microtubules and IGF-1 Receptor Membrane Insertion for Neuronal Polarization",
+    journal: "Molecular Neurobiology",
+    year: 2017,
+    citation: "Mol Neurobiol 54(8):6085-6096",
+    doi: "https://doi.org/10.1007/s12035-016-0144-4",
+  },
+  {
+    title:
+      "Protein palmitoylation inhibition by 2-bromopalmitate alters gliding, host cell invasion and parasite morphology in Toxoplasma gondii",
+    journal: "Molecular and Biochemical Parasitology",
+    year: 2012,
+    citation: "Mol Biochem Parasitol 184(1):39-43",
+    doi: "https://doi.org/10.1016/j.molbiopara.2012.03.006",
+  },
 ];
 
-// Scientific career, newest first. Dates are omitted until confirmed.
+// Scientific career, newest first (ordered by end date).
 export const SCIENCE_TIMELINE = [
   {
     date: "2020",
@@ -196,16 +212,75 @@ export const SCIENCE_TIMELINE = [
       "Moved from research into software, carrying over an analytical, data-driven way of working.",
   },
   {
-    title: "PhD in Chemistry",
+    date: "Mar 2019 - Jan 2020",
+    title: "Postdoctoral Research Fellow",
+    company: "University of Adelaide · Jozef Gecz Lab (Molecular Neurogenetics)",
+    description:
+      "Medical science research in the Molecular Neurogenetics group.",
+    highlights: [
+      "Coordinated and ran research projects in medical science.",
+      "Set up new molecular techniques and work protocols.",
+      "Presented at conferences with oral and poster presentations.",
+      "Co-supervised PhD students.",
+      "Worked with close attention to detail in highly regulated environments.",
+      "Managed projects and worked independently.",
+    ],
+  },
+  {
+    date: "Jan 2018 - Dec 2018",
+    title: "Postdoctoral Research Scientist",
+    company: "SAHMRI · Paul Thomas Lab (SA Genome Editing)",
+    description:
+      "Postdoctoral research at the South Australian Health and Medical Research Institute, with the Adelaide Medical School at the University of Adelaide.",
+    highlights: [
+      "Coordinated and ran research in medical science.",
+      "Set up molecular techniques and work protocols.",
+      "Presented at conferences with oral and poster presentations.",
+      "Co-supervised PhD students.",
+      "Worked with close attention to detail in highly regulated environments.",
+      "Managed projects and worked independently.",
+    ],
+  },
+  {
+    date: "Mar 2011 - Aug 2017",
+    title: "Head of Practical Work",
     company: "Universidad Nacional de Córdoba (UNC)",
     description:
+      "Taught throughout my doctorate: led practical coursework in medical and life sciences.",
+    highlights: [
+      "Coordinated laboratory-based teaching and supervised student projects.",
+      "Planned course content and defined protocols and evaluation criteria.",
+      "Ensured compliance with academic and safety standards.",
+      "Turned theory into hands-on practice through clear instruction, structured documentation and continuous feedback.",
+    ],
+  },
+  {
+    date: "Mar 2011 - Dec 2016",
+    title: "PhD in Chemistry",
+    company: "CONICET · Universidad Nacional de Córdoba (UNC)",
+    description:
       "Doctoral research on how neurons migrate and become polarized during development of the cerebral cortex, published in Scientific Reports (2017).",
+    highlights: [
+      "Coordinated and ran research in medical science.",
+      "Co-authored papers and contributed to grant and fellowship applications.",
+      "Set up new in vivo and in vitro molecular techniques and work protocols.",
+      "Presented at conferences with oral and poster presentations.",
+    ],
     link: "https://doi.org/10.1038/s41598-017-08140-5",
   },
   {
-    title: "Molecular Biology",
-    company: "Scientific training",
-    description: "Research training in molecular biology.",
+    date: "Mar 2015 - Aug 2015",
+    title: "Travel Fellowship (BeCAR, Government of Argentina)",
+    company: "Universidad Autónoma de Madrid · Marta Nieto Lab",
+    description:
+      "Five months at the National Centre of Biotechnology, learning in utero electroporation and pyramidal neuron culture in the host laboratory of Dr Marta Nieto (Department of Molecular and Cellular Biology).",
+  },
+  {
+    date: "Aug 2008 - Sep 2010",
+    title: "Professional Practices",
+    company: "CONICET · INTECH-IIB",
+    description:
+      "Molecular biology of the parasite Toxoplasma gondii, including a publication on protein palmitoylation inhibition (2012).",
   },
 ];
 
