@@ -103,6 +103,38 @@ export const EXPERIENCE = [
   },
 ];
 
+export const RESEARCH_PROFILES = [
+  {
+    name: "Google Scholar",
+    href: "https://scholar.google.com.ar/citations?user=eyDpuOMAAAAJ&hl=en",
+  },
+  {
+    name: "ResearchGate",
+    href: "https://www.researchgate.net/profile/Alvaro-Fernando-Nieto-2",
+  },
+];
+
+// Scientific career, newest first. Dates are omitted until confirmed.
+export const SCIENCE_TIMELINE = [
+  {
+    date: "2020",
+    title: "Career change to web development",
+    company: "Full-stack bootcamp",
+    description:
+      "Moved from research into software, carrying over an analytical, data-driven way of working.",
+  },
+  {
+    title: "PhD in Chemistry",
+    company: "Universidad Nacional de Córdoba (UNC)",
+    description: "Doctoral research in chemistry.",
+  },
+  {
+    title: "Molecular Biology",
+    company: "Scientific training",
+    description: "Research training in molecular biology.",
+  },
+];
+
 // eslint-disable-next-line react-refresh/only-export-components
 const TAGS = {
   TAILWIND: {

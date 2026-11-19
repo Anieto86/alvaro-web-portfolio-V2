@@ -1,12 +1,18 @@
 import { EXPERIENCE } from "../utils/constants";
 import { ExperienceItem } from "./ExperienceItem";
+import type { ExperienceItemProps } from "./ExperienceItem";
 
-const Experience = () => {
+interface ExperienceProps {
+  items?: ExperienceItemProps[];
+}
+
+// Generic vertical timeline. Defaults to the professional experience list.
+const Experience = ({ items = EXPERIENCE }: ExperienceProps) => {
   return (
     <ol className="relative mt-16">
-      {EXPERIENCE.map((experience, index) => (
-        <li key={index}>
-          <ExperienceItem {...experience} />
+      {items.map((item, index) => (
+        <li key={`${item.title}-${index}`}>
+          <ExperienceItem {...item} />
         </li>
       ))}
     </ol>
