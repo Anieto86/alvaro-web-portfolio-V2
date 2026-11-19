@@ -16,6 +16,7 @@ import { FlaskIcon } from "./assets/icons/FlaskIcon";
 import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
 import { SocialPill } from "./components/SocialPill";
 import { Publications } from "./components/Publications";
+import { SkillGroups } from "./components/SkillGroups";
 import { LinkIcon } from "./assets/icons/LinkIcon";
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
 
           <SectionContainer id="stack">
             <InfiniteCarousel />
+            <SkillGroups />
           </SectionContainer>
 
           <SectionContainer id="about-me">

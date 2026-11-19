@@ -114,6 +114,38 @@ export const RESEARCH_PROFILES = [
   },
 ];
 
+export const SKILL_GROUPS = [
+  {
+    title: "Data & Visualization",
+    skills: [
+      "SQL / PostgreSQL",
+      "D3.js",
+      "Data visualization",
+      "Data cleaning & automation",
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Zustand",
+      "Redux Toolkit",
+    ],
+  },
+  {
+    title: "Backend",
+    skills: ["Python", "FastAPI", "Node.js", "Express"],
+  },
+  {
+    title: "Tools & DevOps",
+    skills: ["Docker", "Git", "Vitest"],
+  },
+];
+
 export interface Publication {
   title: string;
   authors: string[];
