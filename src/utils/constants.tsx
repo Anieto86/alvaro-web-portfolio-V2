@@ -114,6 +114,78 @@ export const RESEARCH_PROFILES = [
   },
 ];
 
+export const SKILL_GROUPS = [
+  {
+    title: "Data & Visualization",
+    skills: [
+      "SQL / PostgreSQL",
+      "D3.js",
+      "Data visualization",
+      "Data cleaning & automation",
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Zustand",
+      "Redux Toolkit",
+    ],
+  },
+  {
+    title: "Backend",
+    skills: ["Python", "FastAPI", "Node.js", "Express"],
+  },
+  {
+    title: "Tools & DevOps",
+    skills: ["Docker", "Git", "Vitest"],
+  },
+];
+
+export interface Publication {
+  title: string;
+  authors: string[];
+  journal: string;
+  year: number;
+  citation: string;
+  summary: string;
+  doi: string;
+  pubmed: string;
+  pmc: string;
+  // Local path under /public, e.g. "/imgs/igf1r-migration.webp". Optional.
+  image?: string;
+  imageAlt?: string;
+  imageCredit?: string;
+}
+
+export const PUBLICATIONS: Publication[] = [
+  {
+    title:
+      "IGF-1 receptor regulates dynamic changes in neuronal polarity during cerebral cortical migration",
+    authors: [
+      "Alvaro F Nieto Guil",
+      "Mariana Oksdath",
+      "Linnea A Weiss",
+      "Diego J Grassi",
+      "Lucas J Sosa",
+      "Marta Nieto",
+      "Santiago Quiroga",
+    ],
+    journal: "Scientific Reports",
+    year: 2017,
+    citation: "Sci Rep 7, 7703",
+    summary:
+      "Using in utero electroporation in mice, we showed that the IGF-1 receptor is required for cortical neurons to migrate, switch from a multipolar to a bipolar shape and form an axon.",
+    doi: "https://doi.org/10.1038/s41598-017-08140-5",
+    pubmed: "https://pubmed.ncbi.nlm.nih.gov/28794445/",
+    pmc: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5550468/",
+  },
+];
+
 // Scientific career, newest first. Dates are omitted until confirmed.
 export const SCIENCE_TIMELINE = [
   {
@@ -126,7 +198,9 @@ export const SCIENCE_TIMELINE = [
   {
     title: "PhD in Chemistry",
     company: "Universidad Nacional de Córdoba (UNC)",
-    description: "Doctoral research in chemistry.",
+    description:
+      "Doctoral research on how neurons migrate and become polarized during development of the cerebral cortex, published in Scientific Reports (2017).",
+    link: "https://doi.org/10.1038/s41598-017-08140-5",
   },
   {
     title: "Molecular Biology",

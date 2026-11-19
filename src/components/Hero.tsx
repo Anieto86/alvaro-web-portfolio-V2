@@ -36,12 +36,13 @@ export const Hero = () => {
          dark:text-gray-300 text-pretty text-left"
       >
         +5 years of experience.
-        <strong> Front End Engineer and ex science researcher </strong> from
-        Argentina. Specialized in creating scalable and high-performance web
-        applications using modern technologies like{" "}
-        <strong>React.js, TypeScript, and JavaScript.</strong> Proven track
-        record in delivering innovative solutions and improving development
-        processes in dynamic environments.
+        <strong> Full Stack Developer with a PhD in Chemistry </strong> from
+        Argentina. I turn research and operational data into clear, usable web
+        tools: <strong>data visualization, automated data workflows and dashboards</strong>,
+        built with{" "}
+        <strong>React, TypeScript, FastAPI and PostgreSQL.</strong> My
+        scientific training shapes how I work: ask precise questions, trust the
+        data, and make results easy to understand.
       </p>
       <nav className="flex flex-wrap gap-4 mt-8">
         <SocialPill href={GMAIL_COMPOSE_URL}>

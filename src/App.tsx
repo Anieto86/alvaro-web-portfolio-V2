@@ -15,6 +15,8 @@ import { MailIcon } from "./assets/icons/MailIcon";
 import { FlaskIcon } from "./assets/icons/FlaskIcon";
 import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
 import { SocialPill } from "./components/SocialPill";
+import { Publications } from "./components/Publications";
+import { SkillGroups } from "./components/SkillGroups";
 import { LinkIcon } from "./assets/icons/LinkIcon";
 
 function App() {
@@ -40,9 +42,13 @@ function App() {
               Scientific Journey
             </TitleSection>
             <Experience items={SCIENCE_TIMELINE} />
+            <h3 className="mt-16 mb-6 text-2xl font-semibold text-black/80 dark:text-white">
+              Selected Publications
+            </h3>
+            <Publications />
             <nav
               aria-label="Research profiles"
-              className="flex flex-wrap gap-4 mx-12 mt-4"
+              className="flex flex-wrap gap-4 mt-10"
             >
               {RESEARCH_PROFILES.map(({ name, href }) => (
                 <SocialPill key={name} href={href}>
@@ -63,6 +69,7 @@ function App() {
 
           <SectionContainer id="stack">
             <InfiniteCarousel />
+            <SkillGroups />
           </SectionContainer>
 
           <SectionContainer id="about-me">
