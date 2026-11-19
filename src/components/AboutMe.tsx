@@ -5,10 +5,21 @@ export const AboutMe = () => {
     <article className="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
       <div className="[&>p]:mb-4 [&>p>strong]:text-purple-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
         <p>
-          Hi! I'm <strong>Alvaro Nieto</strong>, a passionate
-          <strong> Front-End Software Engineer</strong> with extensive
-          experience in building <strong>SPA applications</strong> using
-          technologies such as React, TypeScript, and Tailwind.
+          Hi! I'm <strong>Alvaro Nieto</strong>, a
+          <strong> Full Stack Developer</strong> who started out as a
+          scientist, with experience building{" "}
+          <strong>SPA applications</strong> using technologies such as React,
+          TypeScript, and Tailwind.
+        </p>
+
+        <p>
+          Before writing code I trained in{" "}
+          <strong>molecular biology</strong> and earned a{" "}
+          <strong>PhD in Chemistry</strong>, studying at the Universidad
+          Nacional de Córdoba in Argentina. Research taught me to ask precise
+          questions, work with messy data, and care about results other people
+          can rely on. In 2020 I switched careers through a full-stack
+          bootcamp and have been building for the web ever since.
         </p>
 
         <p>

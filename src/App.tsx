@@ -10,6 +10,12 @@ import { Projects } from "./components/Projects";
 import { AboutMe } from "./components/AboutMe";
 import { ProfileCheck } from "./assets/icons/ProfileCheck";
 import { InfiniteCarousel } from "./components/InfiniteCarousel";
+import { ContactForm } from "./components/ContactForm";
+import { MailIcon } from "./assets/icons/MailIcon";
+import { FlaskIcon } from "./assets/icons/FlaskIcon";
+import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
+import { SocialPill } from "./components/SocialPill";
+import { LinkIcon } from "./assets/icons/LinkIcon";
 
 function App() {
   return (
@@ -26,6 +32,25 @@ function App() {
               Professional Expertise
             </TitleSection>
             <Experience />
+          </SectionContainer>
+
+          <SectionContainer id="science">
+            <TitleSection>
+              <FlaskIcon className="size-8" />
+              Scientific Journey
+            </TitleSection>
+            <Experience items={SCIENCE_TIMELINE} />
+            <nav
+              aria-label="Research profiles"
+              className="flex flex-wrap gap-4 mx-12 mt-4"
+            >
+              {RESEARCH_PROFILES.map(({ name, href }) => (
+                <SocialPill key={name} href={href}>
+                  <LinkIcon className="size-4" />
+                  {name}
+                </SocialPill>
+              ))}
+            </nav>
           </SectionContainer>
 
           <SectionContainer id="projects">
@@ -46,6 +71,14 @@ function App() {
               About Me
             </TitleSection>
             <AboutMe />
+          </SectionContainer>
+
+          <SectionContainer id="contact">
+            <TitleSection>
+              <MailIcon className="size-7" />
+              Contact
+            </TitleSection>
+            <ContactForm />
           </SectionContainer>
         </div>
       </main>

@@ -3,6 +3,7 @@ import { LinkedInIcon } from "../assets/icons/LinkedInIcon";
 import { MailIcon } from "../assets/icons/MailIcon";
 import { Badge } from "./Badge";
 import { SocialPill } from "./SocialPill";
+import { GMAIL_COMPOSE_URL } from "../utils/contact";
 
 export const Hero = () => {
   const personalImageAlt = "Alvaro Fernando Nieto Guil";
@@ -43,7 +44,7 @@ export const Hero = () => {
         processes in dynamic environments.
       </p>
       <nav className="flex flex-wrap gap-4 mt-8">
-        <SocialPill href="mailto:alvaro.f.nieto@gmail.com">
+        <SocialPill href={GMAIL_COMPOSE_URL}>
           <MailIcon className="size-4" />
           Contact me
         </SocialPill>
