@@ -78,10 +78,27 @@ export const EXPERIENCE = [
     link: "https://chemdyeillustrations.com/",
   },
   {
+    title: "Data Automation",
+    company: "The Gold Foundation · Nonprofit",
+    description:
+      "Automated the user registration workflow, from an online form to a Google Sheet and a dashboard of registered users.",
+    highlights: [
+      "Built a Google Apps Script that registers users automatically from an online form into Google Sheets.",
+      "Connected the Google Sheets API to the registration records and generated a dashboard of users from the data.",
+      "Designed the script to deduplicate entries, handle dates correctly and run safely more than once without creating duplicates.",
+    ],
+  },
+  {
     date: "July 2024 - October 2024",
     title: "Freelance Web Developer",
     company: "Biobank Web Page - Gomez Lab",
-    description: "Scientific page for administration of biological samples.",
+    description:
+      "Scientific web app for looking up and administering biological samples, built with a university researcher.",
+    highlights: [
+      "Translated the researcher's sample lookup needs into a searchable web application.",
+      "Cleaned and reorganised sample records in Google Sheets, then connected the data to a React application through a Google API using TanStack Query.",
+      "Built tabular views and custom filters, including year and sex, to make stored sample information easier to find and review.",
+    ],
     link: "https://biobank.gomez-lab.com/",
   },
   {
@@ -130,6 +147,10 @@ export const RESEARCH_PROFILES = [
     name: "ResearchGate",
     href: "https://www.researchgate.net/profile/Alvaro-Fernando-Nieto-2",
   },
+  {
+    name: "ORCID",
+    href: "https://orcid.org/0000-0002-9787-3486",
+  },
 ];
 
 export const SKILL_GROUPS = [
@@ -137,6 +158,10 @@ export const SKILL_GROUPS = [
     title: "Data & Visualization",
     skills: [
       "SQL / PostgreSQL",
+      "Google Sheets & Apps Script",
+      "Excel",
+      "GraphPad Prism",
+      "ImageJ",
       "D3.js",
       "Data visualization",
       "Data cleaning & automation",
@@ -151,12 +176,13 @@ export const SKILL_GROUPS = [
       "Tailwind CSS",
       "shadcn/ui",
       "Zustand",
+      "TanStack Query",
       "Redux Toolkit",
     ],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Nest.js", "Express", "Python"],
+    skills: ["Node.js", "Nest.js", "Express", "Drizzle ORM", "REST APIs"],
   },
   {
     title: "Tools & DevOps",
@@ -225,7 +251,7 @@ export const SCIENCE_TIMELINE = [
   {
     date: "2020",
     title: "Career change to web development",
-    company: "Full-stack bootcamp",
+    company: "University of Adelaide · Certificate in Full-Stack Web Development",
     description:
       "Moved from research into software, carrying over an analytical, data-driven way of working.",
   },
