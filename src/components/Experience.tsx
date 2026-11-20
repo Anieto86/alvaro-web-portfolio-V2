@@ -12,7 +12,8 @@ const Experience = ({ items = EXPERIENCE }: ExperienceProps) => {
     <ol className="relative mt-16">
       {items.map((item, index) => (
         <li key={`${item.title}-${index}`}>
-          <ExperienceItem {...item} />
+          {/* The two most recent entries start expanded. */}
+          <ExperienceItem {...item} defaultOpen={index < 2} />
         </li>
       ))}
     </ol>
