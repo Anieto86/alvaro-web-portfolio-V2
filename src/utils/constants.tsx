@@ -65,10 +65,17 @@ export const logos = [
 export const EXPERIENCE = [
   {
     date: "November 2024 - Present",
-    title: "Freelance Web Developer",
-    company: "Hubble X Web Page",
-    description: "Coming soon.",
-    link: "",
+    title: "Full-stack Developer",
+    company: "ChemDye Scientific Illustrations · Contract, Remote",
+    description:
+      "Building a scientific software platform for structured data workflows and digital tools for research and health-related use cases.",
+    highlights: [
+      "Develop and maintain frontend features with React and TypeScript, focusing on usability, accessibility and performance.",
+      "Integrate frontend components with REST APIs, managing application state and data flows across the system.",
+      "Contribute to backend development with Node.js and Nest.js, supporting structured, accuracy-critical data workflows.",
+      "Resolve bugs, configuration issues and data inconsistencies in production, and collaborate with product, QA and engineering on documentation and issue triage.",
+    ],
+    link: "https://chemdyeillustrations.com/",
   },
   {
     date: "July 2024 - October 2024",
@@ -82,15 +89,26 @@ export const EXPERIENCE = [
     title: "Frontend Software Engineer",
     company: "Data Zoo",
     description:
-      "Led the development of key features for SPA applications using React and TypeScript, improving scalability and maintainability of the platform. Reduced bundle sizes by 5% to 20%, enhancing performance across four products. Collaborated with back-end teams to integrate REST APIs, ensuring efficient data flow. Introduced unit testing frameworks and performance profiling techniques, achieving a 30% improvement in loading times. Additionally, implemented a robust design system in partnership with UI/UX teams, reducing feature development time by 25%.",
+      "Global digital identity provider that helps businesses verify and onboard customers and prevent fraud.",
+    highlights: [
+      "Led development of key SPA features with React and TypeScript, improving the scalability and maintainability of the platform.",
+      "Reduced bundle sizes by 5% to 20% across four products, and achieved a 30% improvement in loading times by introducing unit testing and performance profiling.",
+      "Implemented a design system with UI/UX teams, reducing feature development time by 25%, and integrated REST APIs with backend teams.",
+      "Owned frontend technical decisions and mentored junior developers.",
+    ],
     link: "https://www.datazoo.com/",
   },
   {
-    date: "April 2021 - September 2022",
+    date: "April 2021 - October 2022",
     title: "Frontend Software Engineer",
     company: "The Everyone Project",
     description:
-      "Completely developed the front-end of a next-generation SPA product, transforming UX designs into production-ready code using ReactJS and TypeScript. Improved development speed by 20% through optimized component reuse. Employed agile methodologies to ensure continuous delivery and integration within cross-functional teams. Performed extensive performance optimizations and bug fixes, enhancing user experience and application stability.",
+      "Frontend development of complex web UIs and data-heavy products, working in agile, cross-functional teams.",
+    highlights: [
+      "Developed the front end of a new company product in a team of two, turning UX designs into production-ready code with React and TypeScript.",
+      "Built reusable components across the company's products, working with complex data systems; optimized component reuse improved development speed by 20%.",
+      "Performed performance optimizations and bug fixes that improved user experience and application stability.",
+    ],
     link: "https://theeveryoneproject.org/",
   },
   {
@@ -138,7 +156,7 @@ export const SKILL_GROUPS = [
   },
   {
     title: "Backend",
-    skills: ["Python", "FastAPI", "Node.js", "Express"],
+    skills: ["Node.js", "Nest.js", "Express", "Python"],
   },
   {
     title: "Tools & DevOps",
