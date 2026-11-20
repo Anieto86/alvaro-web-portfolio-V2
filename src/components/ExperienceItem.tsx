@@ -6,6 +6,8 @@ export interface ExperienceItemProps {
   description: string;
   // Optional bullet points rendered under the description.
   highlights?: string[];
+  // Whether the highlights start expanded.
+  defaultOpen?: boolean;
   link?: string;
 }
 
@@ -15,6 +17,7 @@ export const ExperienceItem = ({
   company,
   description,
   highlights,
+  defaultOpen = false,
   link,
 }: ExperienceItemProps) => {
   return (
@@ -40,11 +43,16 @@ export const ExperienceItem = ({
       <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3 text-left">
         {description}
         {highlights && highlights.length > 0 && (
-          <ul className="pl-5 space-y-1 list-disc marker:text-purple-400 dark:marker:text-yellow-400">
-            {highlights.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+          <details open={defaultOpen}>
+            <summary className="text-sm font-medium text-purple-500 cursor-pointer select-none dark:text-yellow-400 hover:underline">
+              Highlights ({highlights.length})
+            </summary>
+            <ul className="pl-5 mt-2 space-y-1 list-disc marker:text-purple-400 dark:marker:text-yellow-400">
+              {highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </details>
         )}
         {link && (
           <LinkInline href={link}>

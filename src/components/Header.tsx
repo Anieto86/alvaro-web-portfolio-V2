@@ -8,12 +8,17 @@ const navItems = [
     url: "/#experience",
   },
   {
+    title: "Science",
+    label: "science",
+    url: "/#science",
+  },
+  {
     title: "Projects",
     label: "projects",
     url: "/#projects",
   },
   {
-    title: "About Me",
+    title: "About",
     label: "about-me",
     url: "/#about-me",
   },
@@ -83,7 +88,7 @@ export const Header = () => {
         {navItems.map((link) => (
           <a
             key={link.label}
-            className="relative block px-2 py-2 transition hover:text-purple-500 dark:hover:text-yellow-400"
+            className="relative block px-1.5 py-2 transition sm:px-2 hover:text-purple-500 dark:hover:text-yellow-400"
             data-section={link.label}
             href={link.url}
           >

@@ -218,12 +218,9 @@ export const SCIENCE_TIMELINE = [
     description:
       "Medical science research in the Molecular Neurogenetics group.",
     highlights: [
-      "Coordinated and ran research projects in medical science.",
-      "Set up new molecular techniques and work protocols.",
-      "Presented at conferences with oral and poster presentations.",
-      "Co-supervised PhD students.",
-      "Worked with close attention to detail in highly regulated environments.",
-      "Managed projects and worked independently.",
+      "Coordinated and ran research projects in medical science, setting up new molecular techniques and work protocols.",
+      "Presented at conferences (oral and poster) and co-supervised PhD students.",
+      "Managed projects and worked independently, with close attention to detail in highly regulated environments.",
     ],
   },
   {
@@ -233,12 +230,9 @@ export const SCIENCE_TIMELINE = [
     description:
       "Postdoctoral research at the South Australian Health and Medical Research Institute, with the Adelaide Medical School at the University of Adelaide.",
     highlights: [
-      "Coordinated and ran research in medical science.",
-      "Set up molecular techniques and work protocols.",
-      "Presented at conferences with oral and poster presentations.",
-      "Co-supervised PhD students.",
-      "Worked with close attention to detail in highly regulated environments.",
-      "Managed projects and worked independently.",
+      "Coordinated and ran research in medical science, setting up molecular techniques and work protocols.",
+      "Presented at conferences (oral and poster) and co-supervised PhD students.",
+      "Worked independently on project management, with close attention to detail in highly regulated environments.",
     ],
   },
   {
