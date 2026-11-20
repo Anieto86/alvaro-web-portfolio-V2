@@ -116,7 +116,7 @@ export const EXPERIENCE = [
     link: "https://www.datazoo.com/",
   },
   {
-    date: "April 2021 - September 2022",
+    date: "April 2021 - October 2022",
     title: "Frontend Software Engineer",
     company: "The Everyone Project",
     description:
