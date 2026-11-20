@@ -40,7 +40,7 @@ export const Hero = () => {
         Argentina. I turn research and operational data into clear, usable web
         tools: <strong>data visualization, automated data workflows and dashboards</strong>,
         built with{" "}
-        <strong>React, TypeScript, FastAPI and PostgreSQL.</strong> My
+        <strong>React, TypeScript, Node.js, Nest.js and PostgreSQL.</strong> My
         scientific training shapes how I work: ask precise questions, trust the
         data, and make results easy to understand.
       </p>
