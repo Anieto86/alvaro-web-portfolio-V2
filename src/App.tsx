@@ -10,11 +10,10 @@ import { Projects } from "./components/Projects";
 import { AboutMe } from "./components/AboutMe";
 import { ProfileCheck } from "./assets/icons/ProfileCheck";
 import { InfiniteCarousel } from "./components/InfiniteCarousel";
-import { ContactForm } from "./components/ContactForm";
+import { ContactSection } from "./components/ContactSection";
 import { MailIcon } from "./assets/icons/MailIcon";
 import { FlaskIcon } from "./assets/icons/FlaskIcon";
 import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
-import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "./utils/contact";
 import { Publications } from "./components/Publications";
 import { SkillGroups } from "./components/SkillGroups";
 
@@ -92,18 +91,7 @@ function App() {
               <MailIcon className="size-7" />
               Contact
             </TitleSection>
-            <ContactForm />
-            <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">
-              Prefer email?{" "}
-              <a
-                className="underline hover:text-purple-500 dark:hover:text-yellow-400"
-                href={GMAIL_COMPOSE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {CONTACT_EMAIL}
-              </a>
-            </p>
+            <ContactSection />
           </SectionContainer>
         </div>
       </main>

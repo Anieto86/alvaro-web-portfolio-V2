@@ -40,6 +40,15 @@ src/
 
 Content for experience, projects and stack logos lives in `src/utils/constants.tsx`.
 
+## Contact form
+
+The form posts to a Google Apps Script web app that emails the message. Until it is configured, the Contact section shows an email button instead.
+
+1. Open https://script.google.com, create a project and paste `apps-script/contact-form.gs`.
+2. Deploy -> New deployment -> type **Web app**: Execute as **Me**, Who has access **Anyone**. Authorize when asked.
+3. Copy the **Web app URL** into `CONTACT_FORM_ENDPOINT` in `src/utils/contact.ts`.
+4. After any change to the script, create a **new version** of the deployment (Deploy -> Manage deployments -> Edit -> New version).
+
 ## Deployment
 
 Deployed on Netlify. Build command: `pnpm build`, publish directory: `dist`.
