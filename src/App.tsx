@@ -14,10 +14,9 @@ import { ContactForm } from "./components/ContactForm";
 import { MailIcon } from "./assets/icons/MailIcon";
 import { FlaskIcon } from "./assets/icons/FlaskIcon";
 import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
-import { SocialPill } from "./components/SocialPill";
+import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "./utils/contact";
 import { Publications } from "./components/Publications";
 import { SkillGroups } from "./components/SkillGroups";
-import { LinkIcon } from "./assets/icons/LinkIcon";
 
 function App() {
   return (
@@ -48,13 +47,21 @@ function App() {
             <Publications />
             <nav
               aria-label="Research profiles"
-              className="flex flex-wrap gap-4 mt-10"
+              className="mt-10 text-sm text-gray-600 dark:text-gray-400"
             >
-              {RESEARCH_PROFILES.map(({ name, href }) => (
-                <SocialPill key={name} href={href}>
-                  <LinkIcon className="size-4" />
-                  {name}
-                </SocialPill>
+              Research profiles:{" "}
+              {RESEARCH_PROFILES.map(({ name, href }, index) => (
+                <span key={name}>
+                  <a
+                    className="underline hover:text-purple-500 dark:hover:text-yellow-400"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {name}
+                  </a>
+                  {index < RESEARCH_PROFILES.length - 1 && " · "}
+                </span>
               ))}
             </nav>
           </SectionContainer>
@@ -86,6 +93,17 @@ function App() {
               Contact
             </TitleSection>
             <ContactForm />
+            <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">
+              Prefer email?{" "}
+              <a
+                className="underline hover:text-purple-500 dark:hover:text-yellow-400"
+                href={GMAIL_COMPOSE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </p>
           </SectionContainer>
         </div>
       </main>

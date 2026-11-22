@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "../utils/contact";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -111,16 +110,8 @@ export const ContactForm = () => {
           )}
           {status === "error" && (
             <span className="text-red-600 dark:text-red-400">
-              Something went wrong. You can also email me at{" "}
-              <a
-                className="underline"
-                href={GMAIL_COMPOSE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {CONTACT_EMAIL}
-              </a>
-              .
+              Something went wrong. Please try again or use the email link
+              below.
             </span>
           )}
         </p>
