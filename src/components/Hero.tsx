@@ -3,7 +3,7 @@ import { LinkedInIcon } from "../assets/icons/LinkedInIcon";
 import { MailIcon } from "../assets/icons/MailIcon";
 import { Badge } from "./Badge";
 import { SocialPill } from "./SocialPill";
-import { GMAIL_COMPOSE_URL } from "../utils/contact";
+import { IconLink } from "./IconLink";
 
 export const Hero = () => {
   const personalImageAlt = "Alvaro Fernando Nieto Guil";
@@ -17,9 +17,7 @@ export const Hero = () => {
           alt={personalImageAlt}
         />
         <a
-          href="https://www.linkedin.com/in/alvaro-fernando-nieto-guil"
-          target="_blank"
-          rel="noopener"
+          href="/#contact"
           className="flex items-center transition md:justify-center md:hover:scale-105"
         >
           <Badge>Available for work</Badge>
@@ -44,19 +42,20 @@ export const Hero = () => {
         scientific training shapes how I work: ask precise questions, trust the
         data, and make results easy to understand.
       </p>
-      <nav className="flex flex-wrap gap-4 mt-8">
-        <SocialPill href={GMAIL_COMPOSE_URL}>
+      <nav className="flex flex-wrap items-center gap-3 mt-8">
+        <SocialPill href="/#contact" external={false}>
           <MailIcon className="size-4" />
           Contact me
         </SocialPill>
-        <SocialPill href="https://www.linkedin.com/in/alvaro-fernando-nieto-guil">
+        <IconLink
+          href="https://www.linkedin.com/in/alvaro-fernando-nieto-guil"
+          label="LinkedIn"
+        >
           <LinkedInIcon className="size-4" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/Anieto86">
+        </IconLink>
+        <IconLink href="https://github.com/Anieto86" label="GitHub">
           <GithubIcon className="size-4" />
-          GitHub
-        </SocialPill>
+        </IconLink>
       </nav>
     </div>
   );

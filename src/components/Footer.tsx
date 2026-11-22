@@ -13,13 +13,8 @@ export const Footer = () => {
         </span>
         <ul className="flex flex-row justify-center items-center sm:mt-5 text-sm font-medium dark:text-white/90">
           <li>
-            <a href="/#about-me" className="hover:underline me-4 md:me-6">
+            <a href="/#about-me" className="hover:underline">
               About me
-            </a>
-          </li>
-          <li>
-            <a href="/#contact" className="hover:underline">
-              Contact
             </a>
           </li>
         </ul>
