@@ -8,19 +8,24 @@ const navItems = [
     url: "/#experience",
   },
   {
-    title: "Science",
-    label: "science",
-    url: "/#science",
-  },
-  {
     title: "Data",
     label: "data",
     url: "/#data",
   },
   {
+    title: "Science",
+    label: "science",
+    url: "/#science",
+  },
+  {
     title: "Projects",
     label: "projects",
     url: "/#projects",
+  },
+  {
+    title: "Research",
+    label: "research",
+    url: "/#research",
   },
   {
     title: "About",
