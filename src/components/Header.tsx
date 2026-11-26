@@ -13,6 +13,11 @@ const navItems = [
     url: "/#science",
   },
   {
+    title: "Data",
+    label: "data",
+    url: "/#data",
+  },
+  {
     title: "Projects",
     label: "projects",
     url: "/#projects",

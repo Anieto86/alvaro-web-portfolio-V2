@@ -16,6 +16,8 @@ import { FlaskIcon } from "./assets/icons/FlaskIcon";
 import { SCIENCE_TIMELINE, RESEARCH_PROFILES } from "./utils/constants";
 import { Publications } from "./components/Publications";
 import { SkillGroups } from "./components/SkillGroups";
+import { DataWork } from "./components/DataWork";
+import { ChartIcon } from "./assets/icons/ChartIcon";
 
 function App() {
   return (
@@ -63,6 +65,14 @@ function App() {
                 </span>
               ))}
             </nav>
+          </SectionContainer>
+
+          <SectionContainer id="data">
+            <TitleSection>
+              <ChartIcon className="size-8" />
+              Data Work
+            </TitleSection>
+            <DataWork />
           </SectionContainer>
 
           <SectionContainer id="projects">

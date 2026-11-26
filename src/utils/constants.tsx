@@ -376,3 +376,45 @@ export const projects = [
     github: "https://github.com/Anieto86/cinema-radar",
   },
 ];
+
+export const DATA_WORK = [
+  {
+    title: "Registration data pipeline and dashboard",
+    context: "The Gold Foundation · Nonprofit",
+    problem:
+      "User registrations came in through an online form and had to be handled by hand.",
+    approach: [
+      "Google Apps Script that parses each submission into a clean Google Sheet.",
+      "Deduplication, correct DD/MM/YYYY dates and idempotent runs, so re-running never creates duplicates.",
+      "Google Sheets API connection and a dashboard of registered users built from the data.",
+    ],
+    outcome: "Registrations flow into one clean dataset with no manual entry.",
+    tools: ["Google Apps Script", "Google Sheets API", "Google Sheets"],
+  },
+  {
+    title: "Biobank sample records, from spreadsheet to searchable app",
+    context: "Gomez Lab · University research",
+    problem:
+      "Biological sample records lived in spreadsheets and were hard to look up.",
+    approach: [
+      "Cleaned and reorganised the sample records in Google Sheets.",
+      "Connected the data to a React app through a Google API with TanStack Query.",
+      "Built tabular views with custom filters such as year and sex.",
+    ],
+    outcome: "Researchers can find and review stored samples without digging through sheets.",
+    tools: ["Google Sheets", "React", "TanStack Query"],
+    link: "https://biobank.gomez-lab.com/",
+  },
+  {
+    title: "Experimental data analysis in research",
+    context: "PhD in Chemistry and postdoctoral work",
+    problem:
+      "Experimental results had to be turned into conclusions that hold up to peer review.",
+    approach: [
+      "Designed experiments, collected and analysed the data.",
+      "Presented results as figures and papers in peer-reviewed journals.",
+    ],
+    outcome: "Published research, including my doctoral work in Scientific Reports.",
+    tools: ["Scientific analysis", "Data interpretation", "Scientific writing"],
+  },
+];
