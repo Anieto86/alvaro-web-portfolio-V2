@@ -34,10 +34,10 @@ export const Hero = () => {
          dark:text-gray-300 text-pretty text-left"
       >
         +5 years of experience.
-        <strong> Full Stack Developer with a PhD in Chemistry </strong> from
-        Argentina. I turn research and operational data into clear, usable web
-        tools: <strong>data visualization, automated data workflows and dashboards</strong>,
-        built with{" "}
+        <strong> Data-focused Full Stack Developer with a PhD in Chemistry </strong>{" "}
+        from Argentina. I turn research and operational data into clear
+        answers: <strong>data analysis, automated data workflows and dashboards</strong>,
+        with{" "}
         <strong>React, TypeScript, Node.js, Nest.js and PostgreSQL.</strong> My
         scientific training shapes how I work: ask precise questions, trust the
         data, and make results easy to understand.

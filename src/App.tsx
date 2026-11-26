@@ -18,6 +18,8 @@ import { Publications } from "./components/Publications";
 import { SkillGroups } from "./components/SkillGroups";
 import { DataWork } from "./components/DataWork";
 import { ChartIcon } from "./assets/icons/ChartIcon";
+import { BookIcon } from "./assets/icons/BookIcon";
+import { SocialPill } from "./components/SocialPill";
 
 function App() {
   return (
@@ -36,37 +38,6 @@ function App() {
             <Experience />
           </SectionContainer>
 
-          <SectionContainer id="science">
-            <TitleSection>
-              <FlaskIcon className="size-8" />
-              Scientific Journey
-            </TitleSection>
-            <Experience items={SCIENCE_TIMELINE} />
-            <h3 className="mt-16 mb-6 text-2xl font-semibold text-black/80 dark:text-white">
-              Selected Publications
-            </h3>
-            <Publications />
-            <nav
-              aria-label="Research profiles"
-              className="mt-10 text-sm text-gray-600 dark:text-gray-400"
-            >
-              Research profiles:{" "}
-              {RESEARCH_PROFILES.map(({ name, href }, index) => (
-                <span key={name}>
-                  <a
-                    className="underline hover:text-purple-500 dark:hover:text-yellow-400"
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {name}
-                  </a>
-                  {index < RESEARCH_PROFILES.length - 1 && " · "}
-                </span>
-              ))}
-            </nav>
-          </SectionContainer>
-
           <SectionContainer id="data">
             <TitleSection>
               <ChartIcon className="size-8" />
@@ -75,12 +46,38 @@ function App() {
             <DataWork />
           </SectionContainer>
 
+          <SectionContainer id="science">
+            <TitleSection>
+              <FlaskIcon className="size-8" />
+              Scientific Journey
+            </TitleSection>
+            <Experience items={SCIENCE_TIMELINE} />
+          </SectionContainer>
+
           <SectionContainer id="projects">
             <TitleSection>
               <CodeIcon className="size-7" />
               Projects
             </TitleSection>
             <Projects />
+          </SectionContainer>
+
+          <SectionContainer id="research">
+            <TitleSection>
+              <BookIcon className="size-8" />
+              Research &amp; Publications
+            </TitleSection>
+            <Publications />
+            <nav
+              aria-label="Research profiles"
+              className="flex flex-wrap gap-3 mt-8"
+            >
+              {RESEARCH_PROFILES.map(({ name, href }) => (
+                <SocialPill key={name} href={href}>
+                  {name}
+                </SocialPill>
+              ))}
+            </nav>
           </SectionContainer>
 
           <SectionContainer id="stack">
