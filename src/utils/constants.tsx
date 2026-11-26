@@ -250,10 +250,10 @@ export const PUBLICATIONS: Publication[] = [
 export const SCIENCE_TIMELINE = [
   {
     date: "2020",
-    title: "Career change to web development",
+    title: "Expanding into web development",
     company: "University of Adelaide · Certificate in Full-Stack Web Development",
     description:
-      "Moved from research into software, carrying over an analytical, data-driven way of working.",
+      "Driven by curiosity and the wish to keep learning, I added software to my scientific background: new skills for the times we live in that complement my career as a scientist. They let me work with data end to end, from collecting and cleaning it to turning it into tools people can use.",
   },
   {
     date: "Mar 2019 - Jan 2020",
@@ -266,6 +266,7 @@ export const SCIENCE_TIMELINE = [
       "Presented at conferences (oral and poster) and co-supervised PhD students.",
       "Managed projects and worked independently, with close attention to detail in highly regulated environments.",
     ],
+    link: "https://researchers.adelaide.edu.au/profile/jozef.gecz",
   },
   {
     date: "Jan 2018 - Dec 2018",
@@ -278,6 +279,7 @@ export const SCIENCE_TIMELINE = [
       "Presented at conferences (oral and poster) and co-supervised PhD students.",
       "Worked independently on project management, with close attention to detail in highly regulated environments.",
     ],
+    link: "https://sahmri.org.au/people/paul-thomas",
   },
   {
     date: "Mar 2011 - Aug 2017",
