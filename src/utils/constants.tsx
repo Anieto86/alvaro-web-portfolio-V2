@@ -244,6 +244,22 @@ export const PUBLICATIONS: Publication[] = [
     citation: "Mol Biochem Parasitol 184(1):39-43",
     doi: "https://doi.org/10.1016/j.molbiopara.2012.03.006",
   },
+  {
+    title:
+      "Expanding the RNA-Guided Endonuclease Toolkit for Mouse Genome Editing",
+    journal: "The CRISPR Journal",
+    year: 2018,
+    citation: "CRISPR J 1(6):431-439",
+    doi: "https://doi.org/10.1089/crispr.2018.0050",
+  },
+  {
+    title:
+      "Functional screening of GATOR1 complex variants reveals a role for mTORC1 deregulation in FCD and focal epilepsy",
+    journal: "Neurobiology of Disease",
+    year: 2020,
+    citation: "Neurobiol Dis 134",
+    doi: "https://doi.org/10.1016/j.nbd.2019.104640",
+  },
 ];
 
 // Scientific career, newest first (ordered by end date).
@@ -262,6 +278,8 @@ export const SCIENCE_TIMELINE = [
     description:
       "Medical science research in the Molecular Neurogenetics group.",
     highlights: [
+      "Designed an exploratory cell-free DNA research project, evaluating extraction methods and developing methylation-sensitive ddPCR assays.",
+      "Interpreted fluorescence-based measurements and quantified assay results to assess and refine experimental conditions.",
       "Coordinated and ran research projects in medical science, setting up new molecular techniques and work protocols.",
       "Presented at conferences (oral and poster) and co-supervised PhD students.",
       "Managed projects and worked independently, with close attention to detail in highly regulated environments.",
@@ -275,6 +293,8 @@ export const SCIENCE_TIMELINE = [
     description:
       "Postdoctoral research at the South Australian Health and Medical Research Institute, with the Adelaide Medical School at the University of Adelaide.",
     highlights: [
+      "Transferred and optimised an in vivo experimental method, resolving technical obstacles and training fellow researchers in its use.",
+      "Developed microscopy-based quantification methods with ImageJ and analysed experimental measurements using Excel and GraphPad Prism.",
       "Coordinated and ran research in medical science, setting up molecular techniques and work protocols.",
       "Presented at conferences (oral and poster) and co-supervised PhD students.",
       "Worked independently on project management, with close attention to detail in highly regulated environments.",
