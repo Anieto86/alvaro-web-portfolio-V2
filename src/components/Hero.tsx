@@ -47,6 +47,7 @@ export const Hero = () => {
           <MailIcon className="size-4" />
           Contact me
         </SocialPill>
+        <SocialPill href="/Alvaro-Nieto-CV.pdf">Download CV</SocialPill>
         <IconLink
           href="https://www.linkedin.com/in/alvaro-fernando-nieto-guil"
           label="LinkedIn"
